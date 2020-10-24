@@ -1,0 +1,85 @@
+// Reset styles
+@import "_null.scss";
+
+
+//Fonts
+@import "_fonts.scss";
+
+
+//Variables
+$black: #1f1f24;
+$light-gray: #fbfbfb;
+$pink: #f82370;
+$light-pink: #f53f4f;
+$red: #ff4e2e;
+$gray-blue: #8993ad;
+
+//General styles
+body, html {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 1210px;
+    min-height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+.button-big {
+    display: inline-block;
+    padding: 20px 70px;
+    color: white;
+    font-size: 18px;
+    background-color: $red;
+    border: 1px solid transparent;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: $light-gray;
+        border: 1px solid $pink;
+        color: $light-pink;
+        transition: 0.5s;
+    }
+
+    @media (max-width: 1024px) {
+        margin-left: 19px;
+        padding: 2.3vw 9.4vw;
+        font-size: 1.74vw;
+    }
+}
+
+.button-small {
+    display: inline-block;
+    margin-top: -10px;
+    padding: 15px 40px;
+    color: $light-pink;
+    border: 1px solid $pink;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: $light-pink;
+        color: white;
+        transition: 0.5s;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 1.3vw 3.65vw;
+        font-size: 1.6vw;
+    }
+}
+
+
+
+
+
+// Header
+@import '_header.scss';
+
+// Skills
+@import '_skills.scss';
+
+// Prices
+@import '_prices.scss';

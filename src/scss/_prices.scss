@@ -1,0 +1,36 @@
+// Prices
+
+.prices {
+    width: 100%;
+    height: 364px;
+    background: linear-gradient(60deg, #ff8f5a, #ff2f96);
+
+    h3 {
+        visibility: hidden;
+    }
+}
+
+.prices__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 364px;
+}
+
+.prices__info {
+    margin: 61px 113px 29px;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 60px;
+    color: white;
+}
+
+.prices__descr {
+    display: block;
+    margin: 0 200px 0 115px;
+    font-size: 18px;
+    line-height: 30px;
+    font-style: normal;
+    color: black;
+}
